@@ -22,7 +22,7 @@ namespace integralafx
             float integral = 0;
             for (int i = 1; i < points.Length; i++)
             {
-                integral += (points[i].Y + points[i - 1].Y) * (points[i].X - points[i - 1].X) / 2;
+                integral += ((points[i].Y + points[i - 1].Y) * (points[i].X - points[i - 1].X)) / 2;
             }
             Text = integral.ToString();
         }
